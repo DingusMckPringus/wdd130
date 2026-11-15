@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="400" height="400"><rect width="200" height="200" rx="40" fill="#14213D"/>
+  <text x="24" y="128" font-family="Sora" font-weight="800" font-size="82" fill="#FAFAF7" letter-spacing="-3">OS</text>
+  <rect x="26" y="146" width="84" height="7" rx="3.5" fill="#1B6E7E"/>
+  <g fill="#F2A541">
+    <rect x="140" y="140" width="11" height="14" rx="3"/>
+    <rect x="156" y="124" width="11" height="30" rx="3"/>
+    <rect x="172" y="106" width="11" height="48" rx="3"/>
+  </g></svg>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orlando Santiago's WDD 130 web portfolio: links to the Dry Oar rafting site, ICE challenges, and About Me.">
+    <meta name="author" content="Orlando Santiago III">
+    <title>Orlando Santiago | WDD 130 Portal</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- 1. Header: logo mark, site title, tagline -->
+    <header>
+        <img src="images/logo.png" alt="OS monogram logo" width="64" height="64">
+        <div>
+            <h1>Orlando Santiago</h1>
+            <p>WDD 130 &middot; Web Portfolio</p>
+        </div>
+    </header>
+
+    <!-- 2. Navigation: same menu on every page -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="wwr/index.html">WWR</a></li>
+            <li><a href="ice.html">ICE</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- 3. Hero / welcome: text on the left, image on the right -->
+        <section id="welcome">
+            <div>
+                <p>Home / Welcome</p>
+                <h2>Welcome to My Portal</h2>
+                <p>This page is the front door to everything I build in WDD 130 Web Fundamentals. My background is
+                    in network engineering and security, and this class is where I am learning to build the front end
+                    of the web. Here you will find my Dry Oar rafting site, my in-class challenges, and a little
+                    about me.</p>
+                <a href="#projects">View My Work</a>
+            </div>
+            <img src="images/hero.svg" alt="Abstract network diagram in navy, teal, and amber" width="800" height="560">
+        </section>
+
+        <!-- 4. My Projects: three cards -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <article>
+                <img src="images/card-wwr.jpg" alt="Screenshot of the Dry Oar Boating rafting website" width="800" height="500">
+                <h3>WWR</h3>
+                <p>Dry Oar Boating, a whitewater rafting site built step by step during the course.</p>
+                <a href="wwr/index.html">Open page &rarr;</a>
+            </article>
+
+            <article>
+                <img src="images/card-ice.svg" alt="Code braces illustration" width="800" height="500">
+                <h3>ICE</h3>
+                <p>In-class challenges with a short summary of what I learned from each one.</p>
+                <a href="ice.html">Open page &rarr;</a>
+            </article>
+
+            <article>
+                <img src="images/card-about.svg" alt="Profile illustration" width="800" height="500">
+                <h3>About Me</h3>
+                <p>My background in networking and security, my interests, and my goals for this class.</p>
+                <a href="about.html">Open page &rarr;</a>
+            </article>
+        </section>
+
+        <!-- 5. Learning list + progress table -->
+        <section id="learning">
+            <div>
+                <h3>What I'm Learning</h3>
+                <ul>
+                    <li>Semantic HTML structure</li>
+                    <li>CSS selectors, colors, and fonts</li>
+                    <li>Page layout with CSS Grid</li>
+                    <li>Planning with wireframes and design documents</li>
+                    <li>Responsive design for mobile screens</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Course Progress</h3>
+                <table>
+                    <caption>Portal Page progress checks</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Week</th>
+                            <th scope="col">Assignment</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Plan and Design</td>
+                            <td>Complete</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Convert to HTML</td>
+                            <td>Complete</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Convert to CSS</td>
+                            <td>Complete</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>About page and finishing touches</td>
+                            <td>Complete</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 6. Contact form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Send me a message</legend>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- 7. Footer: copyright + links, last updated, social icons -->
+    <footer>
+        <div>
+            <p>&copy; 2026 Orlando Santiago III &middot; WDD 130</p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="wwr/index.html">WWR</a> |
+                <a href="ice.html">ICE</a> |
+                <a href="about.html">About Me</a>
+            </p>
+        </div>
+        <p>Last updated: <time datetime="2026-11-03">November 3, 2026</time></p>
+        <div>
+            <a href="https://facebook.com" target="_blank" rel="noopener"><img src="images/facebook.png" alt="Facebook" width="32" height="32"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img src="images/instagram.png" alt="Instagram" width="32" height="32"></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"><img src="images/twitter.png" alt="Twitter" width="32" height="32"></a>
+        </div>
+    </footer>
+</body>
+</html>
