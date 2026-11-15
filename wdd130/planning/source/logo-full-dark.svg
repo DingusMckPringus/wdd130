@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="1600" height="480">
+  <rect width="800" height="240" fill="#14213D"/>
+  <g transform="translate(20,20)">
+  <rect width="200" height="200" rx="40" fill="#FAFAF7"/>
+  <text x="24" y="128" font-family="Sora" font-weight="800" font-size="82" fill="#14213D" letter-spacing="-3">OS</text>
+  <rect x="26" y="146" width="84" height="7" rx="3.5" fill="#1B6E7E"/>
+  <g fill="#F2A541"><rect x="140" y="140" width="11" height="14" rx="3"/><rect x="156" y="124" width="11" height="30" rx="3"/><rect x="172" y="106" width="11" height="48" rx="3"/></g>
+  <text x="236" y="98" font-family="Sora" font-weight="700" font-size="54" fill="#FAFAF7" letter-spacing="-1">Orlando Santiago</text>
+  <text x="238" y="146" font-family="JetBrains Mono" font-weight="500" font-size="26" fill="#F2A541" letter-spacing="2">WDD 130 · WEB PORTFOLIO</text>
+  </g>
+</svg>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 16px;
+            background-color: #E8ECED;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Main card with the Christus background */
+        .spotlight {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 8px 20px 30px 150px;
+            border: 6px solid #000;
+            border-radius: 25px;
+            background-image: url("images/christus.webp");
+            background-size: cover;
+            background-position: -170px center;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        h1,
+        h2 {
+            font-weight: normal;
+            margin: 0;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 12px 0 8px;
+        }
+
+        /* Photo rows */
+        .presidency,
+        .twelve {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .presidency {
+            grid-template-columns: repeat(3, auto);
+            gap: 22px;
+        }
+
+        .twelve {
+            grid-template-columns: repeat(4, auto);
+            gap: 20px 22px;
+        }
+
+        /* Each apostle */
+        figure {
+            position: relative;
+            margin: 0;
+            outline: none;
+            opacity: 0;
+            animation: popIn 0.6s ease-out forwards;
+            animation-delay: calc(var(--i, 0) * 70ms);
+        }
+
+        figure img {
+            display: block;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            object-position: top;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .presidency img {
+            width: 108px;
+            height: 108px;
+        }
+
+        .presidency .president img {
+            width: 118px;
+            height: 118px;
+        }
+
+        /* Challenge: outline changes color on hover */
+        figure:hover img,
+        figure:focus-visible img {
+            border-color: #f2c94c;
+            transform: scale(1.1);
+            box-shadow: 0 0 18px #f2c94c;
+        }
+
+        /* Extra credit: name tag appears on hover */
+        figcaption {
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translate(-50%, 6px);
+            padding: 3px 8px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            font-size: 0.75rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 2;
+        }
+
+        figure:hover figcaption,
+        figure:focus-visible figcaption {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+        /* Extra credit: staggered entrance animation */
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.6);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Extra credit: responsive layout for phones */
+        @media (max-width: 640px) {
+            .spotlight {
+                padding: 8px 12px 24px;
+                background-position: 35% center;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .presidency {
+                gap: 12px;
+            }
+
+            .presidency img,
+            .presidency .president img {
+                width: 84px;
+                height: 84px;
+            }
+
+            .twelve {
+                grid-template-columns: repeat(3, auto);
+                gap: 16px;
+            }
+
+            figure img {
+                width: 72px;
+                height: 72px;
+            }
+        }
+
+        /* Extra credit: respect users who prefer less motion */
+        @media (prefers-reduced-motion: reduce) {
+            figure {
+                animation: none;
+                opacity: 1;
+            }
+
+            figure img,
+            figcaption {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="spotlight">
+        <h1>First Presidency</h1>
+        <section class="presidency">
+            <figure tabindex="0" style="--i: 0">
+                <img src="images/eyring.webp" alt="Henry B. Eyring">
+                <figcaption>Henry B. Eyring</figcaption>
+            </figure>
+            <figure class="president" tabindex="0" style="--i: 1">
+                <img src="images/oaks.webp" alt="Dallin H. Oaks">
+                <figcaption>President Dallin H. Oaks</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 2">
+                <img src="images/christofferson.webp" alt="D. Todd Christofferson">
+                <figcaption>D. Todd Christofferson</figcaption>
+            </figure>
+        </section>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+        <section class="twelve">
+            <figure tabindex="0" style="--i: 3">
+                <img src="images/uchtdorf.webp" alt="Dieter F. Uchtdorf">
+                <figcaption>Dieter F. Uchtdorf</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 4">
+                <img src="images/bednar.webp" alt="David A. Bednar">
+                <figcaption>David A. Bednar</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 5">
+                <img src="images/cook.webp" alt="Quentin L. Cook">
+                <figcaption>Quentin L. Cook</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 6">
+                <img src="images/anderson.webp" alt="Neil L. Andersen">
+                <figcaption>Neil L. Andersen</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 7">
+                <img src="images/rasband.webp" alt="Ronald A. Rasband">
+                <figcaption>Ronald A. Rasband</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 8">
+                <img src="images/stevenson.webp" alt="Gary E. Stevenson">
+                <figcaption>Gary E. Stevenson</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 9">
+                <img src="images/renlund.webp" alt="Dale G. Renlund">
+                <figcaption>Dale G. Renlund</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 10">
+                <img src="images/gong.webp" alt="Gerrit W. Gong">
+                <figcaption>Gerrit W. Gong</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 11">
+                <img src="images/soares.webp" alt="Ulisses Soares">
+                <figcaption>Ulisses Soares</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 12">
+                <img src="images/kearon.webp" alt="Patrick Kearon">
+                <figcaption>Patrick Kearon</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 13">
+                <img src="images/causse.webp" alt="Gérald Caussé">
+                <figcaption>Gérald Caussé</figcaption>
+            </figure>
+            <figure tabindex="0" style="--i: 14">
+                <img src="images/gilbert.webp" alt="Clark G. Gilbert">
+                <figcaption>Clark G. Gilbert</figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>

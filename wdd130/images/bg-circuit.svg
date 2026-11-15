@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g fill="none" stroke="#1B6E7E" stroke-width="1.5" opacity="0.35">
+    <path d="M0 30 H40 L55 45 H120"/>
+    <path d="M30 0 V20 L45 35"/>
+    <path d="M80 120 V90 L95 75 H120"/>
+    <path d="M0 95 H30 L45 80 V60"/>
+  </g>
+  <g fill="#F2A541" opacity="0.45">
+    <circle cx="45" cy="35" r="3"/>
+    <circle cx="45" cy="60" r="3"/>
+    <circle cx="95" cy="75" r="3"/>
+  </g>
+</svg>

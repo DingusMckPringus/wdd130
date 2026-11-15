@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orlando Santiago's WDD 130 in-class (ICE) challenges, with a summary of each and what I learned.">
+    <meta name="author" content="Orlando Santiago III">
+    <title>ICE Challenges | Orlando Santiago | WDD 130 Portal</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- 1. Header: logo mark, site title, tagline -->
+    <header>
+        <img src="images/logo.png" alt="OS monogram logo" width="64" height="64">
+        <div>
+            <h1>Orlando Santiago</h1>
+            <p>WDD 130 &middot; Web Portfolio</p>
+        </div>
+    </header>
+
+    <!-- 2. Navigation: same menu on every page -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wwr/index.html">WWR</a></li>
+            <li><a href="ice.html" class="active" aria-current="page">ICE</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Page intro -->
+        <section class="page-intro">
+            <p>Home / ICE</p>
+            <h2>ICE Challenges</h2>
+            <p>ICE stands for In-Class Exercise. Each challenge is a short, focused build that practices one new
+                HTML or CSS skill. Below is every challenge I have completed, what it asked me to do, and what I
+                took away from it. Each link opens the finished challenge in a new tab.</p>
+        </section>
+
+        <!-- One article per ICE challenge -->
+        <section class="ice-list">
+            <h2>Completed Challenges</h2>
+
+            <article>
+                <img src="images/ice-apostle.jpg" alt="Screenshot of the Apostle Spotlight challenge" width="800" height="500">
+                <div>
+                    <p class="ice-tag">ICE 1 &middot; CSS Grid &amp; Backgrounds</p>
+                    <h3>Apostle Spotlight</h3>
+                    <p><strong>The assignment:</strong> Match a provided design by building a card that shows the
+                        First Presidency and the Quorum of the Twelve Apostles, with a photo and name for each,
+                        set over a background image of the Christus.</p>
+                    <h4>What I learned</h4>
+                    <ul>
+                        <li>Arranging rows of photos with CSS Grid and <code>grid-template-columns</code></li>
+                        <li>Positioning a decorative image with <code>background-size</code> and <code>background-position</code></li>
+                        <li>Grouping each photo and name with <code>figure</code> and <code>figcaption</code></li>
+                        <li>Polishing a design with rounded borders, shadows, and text shadows</li>
+                    </ul>
+                    <a href="ice/apostle_spotlight/apostles.html" target="_blank" rel="noopener">View challenge &rarr;</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- 7. Footer: copyright + links, last updated, social icons -->
+    <footer>
+        <div>
+            <p>&copy; 2026 Orlando Santiago III &middot; WDD 130</p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="wwr/index.html">WWR</a> |
+                <a href="ice.html">ICE</a> |
+                <a href="about.html">About Me</a>
+            </p>
+        </div>
+        <p>Last updated: <time datetime="2026-11-03">November 3, 2026</time></p>
+        <div>
+            <a href="https://facebook.com" target="_blank" rel="noopener"><img src="images/facebook.png" alt="Facebook" width="32" height="32"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img src="images/instagram.png" alt="Instagram" width="32" height="32"></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"><img src="images/twitter.png" alt="Twitter" width="32" height="32"></a>
+        </div>
+    </footer>
+</body>
+</html>
